@@ -27,3 +27,22 @@ const obj3: {
 const arr1: number[] = [1, 2, 3]; // 굿
 const arr2: number[] = [1, 2, 'A']; // 에러. 컴파일은 됨.
 const arr: any[] = [3, 'A']; // 가능
+const arr3: Array<number> = [1, 2]
+
+// Object
+let obj: { 
+	name: string, 
+	age: number 
+} = { 
+    name: "John", 
+    age: 25 
+};
+
+
+/*
+enum 타입: 사용자정의 타입으로, 특정 상태들을 저장해놓고 싶을 때 사용
+*/
+
+enum Role {Admin, ReadOnly, Author}; // enum 타입인 Role 선언
+console.log(Role.Admin); // 0. enum 타입 사용
+console.log(Role.Author); // 2. enum 타입 사용
